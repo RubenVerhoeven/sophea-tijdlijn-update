@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOPHÉA, van eettafel tot atelier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="kop">
+    <h1><img src="img/sophea-logo.png" alt="SOPHÉA" class="logo"><span>van eettafel tot atelier</span></h1>
+    <p class="kop-hint">Sleep door de tijd of gebruik de pijltjestoetsen</p>
+  </header>
+
+  <main id="podium" class="podium"></main>
+
+  <nav class="tijdlijn" aria-label="Tijdlijn van SOPHÉA">
+    <button type="button" class="tl-pijl" id="vorigeStap" aria-label="Vorige stap">‹</button>
+    <div class="baan" id="baan">
+      <span class="actief-label" id="actiefLabel" aria-hidden="true"></span>
+      <div class="punten" id="punten" aria-hidden="true"></div>
+      <label for="tijdSlider" class="sr-only">Kies een moment in de tijd</label>
+      <input type="range" id="tijdSlider" min="0" max="0" step="1" value="0">
+      <div class="maanden" id="maanden" aria-hidden="true"></div>
+    </div>
+    <button type="button" class="tl-pijl" id="volgendeStap" aria-label="Volgende stap">›</button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
